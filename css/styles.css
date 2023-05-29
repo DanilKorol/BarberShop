@@ -1,0 +1,296 @@
+:root {
+  /* fonst  */
+  --main-fonts: 'Open sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+  --main-txt-cl: #303030;
+  --secondary-txt-cl: #555555;
+  --grey-txt-cl: #9da4bd;
+  --accent-txt-cl: #ff6c00;
+  --txt-transparent: rgba(157, 164, 189, 0.6);
+
+  /* bg colors */
+  --dark-bg-cl: #191c26;
+  --light-bg-cl: #f7f7f7;
+
+  /* others */
+  --dark-btn-cl: #303030;
+  --light-btn-cl: #ffffff;
+}
+
+body {
+  font-family: var(--main-fonts);
+  color: var(--main-txt-cl);
+}
+
+/* reset styles */
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+/* base styles */
+
+.uppertitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+}
+
+.uppertitle-mode-transparent {
+  color: var(--txt-transparent);
+}
+
+.uppertitle-mode-dark {
+  color: var(--main-txt-cl);
+}
+
+.section-title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.section-title-mode-light {
+  color: #ffffff;
+}
+
+.section-title-mode-dark {
+  color: #303030;
+}
+
+.section-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-cl);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--light-btn-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+.btn-mode-light {
+  color: var(--light-btn-cl);
+}
+
+.btn-mode-dark {
+  color: var(--dark-btn-cl);
+}
+
+/* Header section */
+
+.header {
+  background-color: var(--dark-bg-cl);
+}
+
+.header-link,
+.header-phone {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-phone:hover,
+.header-phone:focus,
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* Hero section */
+
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.hero-desc {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--grey-txt-cl);
+}
+
+.slider-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.enabled {
+  color: var(--light-btn-cl);
+}
+
+.disabled {
+  color: var(--txt-transparent);
+}
+
+.slider-btn-left {
+  text-align: left;
+}
+
+.slider-btn-right {
+  text-align: right;
+}
+
+/* About section */
+
+.about-desc {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-cl);
+}
+
+/* Price section */
+
+.price-section {
+  background-color: var(--dark-bg-cl);
+}
+
+.price-inner-item {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--grey-txt-cl);
+}
+
+/* Features section */
+
+.features-item {
+  background-color: var(--light-bg-cl);
+}
+
+/* Barbers section */
+
+.barbers-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.barbers-profession {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-txt-cl);
+}
+
+.barbers-link:hover,
+.barbers-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* Contacts section */
+
+.contacts {
+  background-color: var(--dark-bg-cl);
+}
+
+.contacts-address {
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--grey-txt-cl);
+}
+
+.contacts-location {
+  font-weight: 700;
+}
+
+.contacts-mail {
+  text-decoration: underline;
+}
+
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--grey-txt-cl);
+}
+
+/* Footer section */
+
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+
+  color: var(--grey-txt-cl);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
